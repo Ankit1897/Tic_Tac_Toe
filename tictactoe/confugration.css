@@ -1,0 +1,40 @@
+#game-configuration{
+   
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+#game-configuration ol{
+      
+      width: 350px;
+      display: flex;
+      align-items: center;
+      margin: 10px 0; 
+      padding: 0;
+      justify-content: space-evenly;
+      list-style: none;
+}
+#game-configuration ol li{
+   
+   
+    width: 140px;
+    height: 200px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    background-color: rgb(244, 231, 255);
+    text-align: center;
+}
+#start{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(140, 0, 255);
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+#start:hover{
+    background-color: rgb(96, 1, 160);
+
+}

@@ -1,0 +1,44 @@
+#active-game{
+    
+    width: 100vw;
+    height: 40vh;
+    text-align: center;
+    
+    display: none;
+
+}
+
+#active-game ol{
+    
+   
+    list-style: none;
+    display: flex;
+    width: 210px;
+    height: 210px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+#result{
+    display: none;
+}
+#active-game ol li{
+         width: 60px;
+         height: 60px;
+         cursor: pointer;
+         background-color: rgb(200, 158, 235);
+         margin: 5px;
+         margin-left: 0px;
+         margin-right: 10px;
+         color: white;
+         font-size: 200%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        
+}
+#active-game ol li:hover{
+    background-color: rgb(106, 55, 215);
+}
+#game-fields li.active-disable{
+    background-color: rgb(106, 55, 215);
+}
