@@ -41,6 +41,15 @@ function selectedfield(event)
     gamefield[selectedrow][selectedcol]=activeplayer%2+1;
 
     winner=checkinggameover();
+    let tie=draw();
+    if(tie)
+    {
+        ending.style.display='none';
+        
+        document.getElementById('win').style.display='none';
+        result.style.display='block';
+        document.getElementById('tie').style.display='block';
+    }
       if(winner==1)
       {
         ending.style.display='none';
@@ -80,4 +89,18 @@ function checkinggameover()
 
     return 0;
     
+}
+function draw()
+{
+    let x=0;
+    for(let i=0;i<3;i++)
+    {
+        for(let j=0;j<3;j++)
+        {
+            if(gamefield[i][j]==0)
+            x++;
+        }
+    }
+    if(x==0)
+    return 1;
 }

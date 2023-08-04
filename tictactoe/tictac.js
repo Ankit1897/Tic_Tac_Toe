@@ -1,6 +1,7 @@
 let cancel=document.getElementById('cancel');
 let form=document.getElementById('edit-player');
 let confirm=document.getElementById('confirm');
+let containor=document.getElementById('containor');
 const gamefield=[
     [0 , 0 , 0],
     [0 , 0 , 0],

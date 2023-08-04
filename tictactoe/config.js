@@ -3,14 +3,14 @@ function editname(event)
     selectedplayer=event.target.dataset.playerid;
     
     input.focus;
-    change1.style.display='block';
+    containor.style.display='block';
     change2.style.display='block';
    
    
 }
 function edited()
 {
-    change1.style.display='none';
+    containor.style.display='none';
     change2.style.display='none';
     input.classList.remove('error');
     inputerror.innerText="";
@@ -39,8 +39,7 @@ function submited(e) {
             player[1].name=input.value;
          }
          input.value="";
-        edited();
-        
+        editedontainor
     }
 
 }

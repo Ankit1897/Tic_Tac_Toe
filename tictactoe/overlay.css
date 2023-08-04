@@ -1,7 +1,14 @@
+
+#containor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
 #overlays-containor{
     position: fixed;
-    left: 30vw;
-    top: 25vh;
+    left: 30%;
+    top: 20%;
     border: 2px solid black;
     width: 450px;
     height: 200px;
@@ -12,8 +19,17 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     align-items: center;
     text-align: center;
-    display:none;
     
+    
+}
+@media (max-width:600px){
+    #overlays-containor{
+        left:20%;
+        width: 250px;
+    }
+    #overlays-containor input{
+        width: 125px;
+    }
 }
 #edit-player{
    
@@ -34,6 +50,7 @@
     font-size: 120%;
 }
 #backdrop{
+    
     position: fixed;
     top: 0;
     left: 0;

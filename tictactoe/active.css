@@ -7,7 +7,9 @@
     display: none;
 
 }
-
+#tie{
+    display: none;
+}
 #active-game ol{
     
    
